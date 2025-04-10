@@ -29,7 +29,6 @@
                 </div>
             </div>
             
-            <!-- Other menu items (same structure as Burger) -->
             <!-- Pizza -->
             <div class="menu-card">
                 <img src="https://i.pinimg.com/736x/af/0d/2e/af0d2e58ef40f5b065595781d878e7f5.jpg" alt="Pizza">
@@ -170,6 +169,34 @@
                 </div>
             </div>
 
+            <!-- Dosa -->
+            <div class="menu-card">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-dosa-illustration_23-2149233675.jpg" alt="Dosa">
+                <div class="details">
+                    <div class="item-name">Dosa</div>
+                    <div class="price">₹80</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="80" data-name="Dosa">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Idli -->
+            <div class="menu-card">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-idli-sambar-illustration_23-2149233678.jpg" alt="Idli">
+                <div class="details">
+                    <div class="item-name">Idli</div>
+                    <div class="price">₹40</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="40" data-name="Idli">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+
             <button class="submit-btn" type="button">Place Order</button>
         </form>
 
@@ -182,6 +209,36 @@
                 <div id="gstAmount"></div>
                 <div id="grandTotal"></div>
             </div>
+            
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h3>Select Payment Method</h3>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cash" checked>
+                        <div class="payment-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/270/270343.png" alt="Cash">
+                            <span>Cash</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="upi">
+                        <div class="payment-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="UPI">
+                            <span>UPI</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="card">
+                        <div class="payment-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Card">
+                            <span>Card</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            
+            <button class="confirm-btn" type="button">Confirm Order</button>
             <a href="#" class="back-btn">Back to Menu</a>
         </div>
     </div>
