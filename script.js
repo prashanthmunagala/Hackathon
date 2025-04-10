@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Back to Menu button
     document.querySelector('.back-btn').addEventListener('click', goBack);
+
+    // Confirm Order button
+    document.querySelector('.confirm-btn').addEventListener('click', confirmOrder);
 });
 
 function updateQuantity(button, change) {
@@ -80,8 +83,26 @@ function calculateTotal() {
 }
 
 function goBack(event) {
-    event.preventDefault();
+    if (event && typeof event.preventDefault === 'function') {
+        event.preventDefault();
+    }
     document.getElementById('orderSummary').style.display = 'none';
     document.getElementById('menuForm').style.display = 'grid';
     document.querySelector('.submit-btn').style.display = 'block';
+}
+
+function confirmOrder() {
+    const selectedPayment = document.querySelector('input[name="payment"]:checked').value;
+    const grandTotal = document.getElementById('grandTotal').textContent;
+    
+    // In a real app, you would process the payment here
+    alert(`Order confirmed!\nPayment Method: ${selectedPayment.toUpperCase()}\n${grandTotal}\nThank you for your order!`);
+    
+    // Reset the form
+    document.querySelectorAll('.quantity-input').forEach(input => {
+        input.value = 0;
+    });
+    
+    // Go back to menu
+    goBack({preventDefault: () => {}});
 }
