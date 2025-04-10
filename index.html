@@ -4,194 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Canteen Menu</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>
+            <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVqeUdBQSBteVIpFFo37CCu04-4n4sL0Oxg&s" alt="Logo">
+            Sree Datta Group of Institutions
+        </h1>
+        <h2 class="logo-heading">College Canteen Menu</h2>
 
-<div class="container">
-    <h1>
-        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVqeUdBQSBteVIpFFo37CCu04-4n4sL0Oxg&s" alt="Logo">
-        Sree Datta Group of Institutions
-    </h1>
-    <h2 class="logo-heading">College Canteen Menu</h2>
+        <form id="menuForm" class="menu-grid">
+            <!-- Burger -->
+            <div class="menu-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Burger">
+                <div class="details">
+                    <div class="item-name">Burger</div>
+                    <div class="price">₹50</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="50" data-name="Burger">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other menu items (same structure as Burger) -->
+            <!-- Pizza -->
+            <div class="menu-card">
+                <img src="https://i.pinimg.com/736x/af/0d/2e/af0d2e58ef40f5b065595781d878e7f5.jpg" alt="Pizza">
+                <div class="details">
+                    <div class="item-name">Pizza</div>
+                    <div class="price">₹100</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="100" data-name="Pizza">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Samosa -->
+            <div class="menu-card">
+                <img src="https://img.freepik.com/premium-vector/samosa-mascot-vector-logo-design_1594-303.jpg?semt=ais_hybrid&w=740" alt="Samosa">
+                <div class="details">
+                    <div class="item-name">Samosa</div>
+                    <div class="price">₹15</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="15" data-name="Samosa">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tea -->
+            <div class="menu-card">
+                <img src="https://png.pngtree.com/template/20190214/ourmid/pngtree-coffee-and-tea-logo-image_54910.jpg" alt="Tea">
+                <div class="details">
+                    <div class="item-name">Tea</div>
+                    <div class="price">₹10</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="10" data-name="Tea">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sandwich -->
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PTrk4DWcr4mnFAzNspqDxwETim9DXbSwgA&s" alt="Sandwich">
+                <div class="details">
+                    <div class="item-name">Sandwich</div>
+                    <div class="price">₹30</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="30" data-name="Sandwich">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pasta -->
+            <div class="menu-card">
+                <img src="https://t3.ftcdn.net/jpg/02/68/37/98/360_F_268379896_iR9EKvz6JHY7towuu9q6HJgdnIJ03ISb.jpg" alt="Pasta">
+                <div class="details">
+                    <div class="item-name">Pasta</div>
+                    <div class="price">₹120</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="120" data-name="Pasta">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- French Fries -->
+            <div class="menu-card">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2478004441/display_1500/stock-vector-french-fries-logo-label-banner-sticker-template-vector-illustration-cartoon-2478004441.jpg" alt="Fries">
+                <div class="details">
+                    <div class="item-name">French Fries</div>
+                    <div class="price">₹40</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="40" data-name="French Fries">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cold Drink -->
+            <div class="menu-card">
+                <img src="https://thumbs.dreamstime.com/z/cool-refreshing-cold-drinks-logo-design-unique-eye-catching-logo-design-perfect-cold-drinks-businesses-vibrant-333289112.jpg" alt="Cold Drink">
+                <div class="details">
+                    <div class="item-name">Cold Drink</div>
+                    <div class="price">₹300</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="300" data-name="Cold Drink">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ice Cream -->
+            <div class="menu-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/769/138/non_2x/ice-cream-logo-free-vector.jpg" alt="Ice Cream">
+                <div class="details">
+                    <div class="item-name">Ice Cream</div>
+                    <div class="price">₹60</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="60" data-name="Ice Cream">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Juice -->
+            <div class="menu-card">
+                <img src="https://img.freepik.com/premium-vector/logo-fresh-juice-with-green-label-that-says-fresh-juice_1166763-23210.jpg?semt=ais_hybrid&w=740" alt="Juice">
+                <div class="details">
+                    <div class="item-name">Juice</div>
+                    <div class="price">₹25</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="25" data-name="Juice">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biryani -->
+            <div class="menu-card">
+                <img src="https://i.pinimg.com/474x/de/79/bb/de79bb3fcae9d0e4d80ab5aa581cfd5e.jpg" alt="Biryani">
+                <div class="details">
+                    <div class="item-name">Biryani</div>
+                    <div class="price">₹150</div>
+                    <div class="quantity-selector">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="0" min="0" data-price="150" data-name="Biryani">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
 
-    <form id="menuForm" class="menu-grid">
-        <!-- Burger -->
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Burger">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Burger" data-price="50">
-                    Burger - ₹50
-                </label>
-            </div>
-        </div>
-        <!-- Pizza -->
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://i.pinimg.com/736x/af/0d/2e/af0d2e58ef40f5b065595781d878e7f5.jpg" alt="Pizza">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Pizza" data-price="100">
-                    Pizza - ₹100
-                </label>
-            </div>
-        </div>
-        <!-- Samosa -->
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://img.freepik.com/premium-vector/samosa-mascot-vector-logo-design_1594-303.jpg?semt=ais_hybrid&w=740" alt="Samosa">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Samosa" data-price="15">
-                    Samosa - ₹15
-                </label>
-            </div>
-        </div>
-        <!-- Tea -->
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://png.pngtree.com/template/20190214/ourmid/pngtree-coffee-and-tea-logo-image_54910.jpg" alt="Tea">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Tea" data-price="10">
-                    Tea - ₹10
-                </label>
-            </div>
-        </div>
-        
-        <!-- Additional Items -->
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PTrk4DWcr4mnFAzNspqDxwETim9DXbSwgA&s" alt="Sandwich">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Sandwich" data-price="30">
-                    Sandwich - ₹30
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://t3.ftcdn.net/jpg/02/68/37/98/360_F_268379896_iR9EKvz6JHY7towuu9q6HJgdnIJ03ISb.jpg" alt="Pasta">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Pasta" data-price="120">
-                    Pasta - ₹120
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://www.shutterstock.com/shutterstock/photos/2478004441/display_1500/stock-vector-french-fries-logo-label-banner-sticker-template-vector-illustration-cartoon-2478004441.jpg" alt="Fries">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="French Fries" data-price="40">
-                    French Fries - ₹40
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://thumbs.dreamstime.com/z/cool-refreshing-cold-drinks-logo-design-unique-eye-catching-logo-design-perfect-cold-drinks-businesses-vibrant-333289112.jpg" alt="Cold Drink">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Cold Drink" data-price="300">
-                    Cold Drink - ₹300
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://static.vecteezy.com/system/resources/previews/021/769/138/non_2x/ice-cream-logo-free-vector.jpg" alt="Ice Cream">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Ice Cream" data-price="60">
-                    Ice Cream - ₹60
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://img.freepik.com/free-psd/fresh-fruit-juices-glasses-transparent-background_84443-25779.jpg" alt="Juice">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Juice" data-price="25">
-                    Juice - ₹25
-                </label>
-            </div>
-        </div>
-        <div class="menu-card" onclick="toggleCheckbox(this)">
-            <img src="https://i.pinimg.com/474x/de/79/bb/de79bb3fcae9d0e4d80ab5aa581cfd5e.jpg" alt="Biryani">
-            <div class="details">
-                <label>
-                    <input type="checkbox" name="item" value="Biryani" data-price="150">
-                    Biryani - ₹150
-                </label>
-            </div>
-        </div>
+            <button class="submit-btn" type="button">Place Order</button>
+        </form>
 
-        <button class="submit-btn" type="button" onclick="calculateTotal()">Place Order</button>
-    </form>
-
-    <!-- Order Summary -->
-    <div class="order-summary" id="orderSummary" style="display: none;">
-        <h2>Order Summary</h2>
-        <ul id="selectedItems"></ul>
-        <div class="total">
-            <div id="totalAmount"></div>
-            <div id="gstAmount"></div>
-            <div id="grandTotal"></div>
+        <!-- Order Summary -->
+        <div class="order-summary" id="orderSummary">
+            <h2>Order Summary</h2>
+            <ul id="selectedItems"></ul>
+            <div class="total">
+                <div id="totalAmount"></div>
+                <div id="gstAmount"></div>
+                <div id="grandTotal"></div>
+            </div>
+            <a href="#" class="back-btn">Back to Menu</a>
         </div>
-        <a href="#" class="back-btn" onclick="goBack()">Back to Menu</a>
     </div>
-</div>
 
-<script>
-    // Function to toggle the checkbox when the image is clicked
-    function toggleCheckbox(menuCard) {
-        const checkbox = menuCard.querySelector('input[type="checkbox"]');
-        checkbox.checked = !checkbox.checked;
-    }
-
-    function calculateTotal() {
-        const checkboxes = document.querySelectorAll('input[name="item"]:checked');
-        const selectedList = document.getElementById('selectedItems');
-        const totalDisplay = document.getElementById('totalAmount');
-        const gstDisplay = document.getElementById('gstAmount');
-        const grandTotalDisplay = document.getElementById('grandTotal');
-        const summarySection = document.getElementById('orderSummary');
-
-        let total = 0;
-        let gst = 0;
-        const gstRate = 0.20;
-
-        // Clear previous order summary
-        selectedList.innerHTML = '';
-
-        checkboxes.forEach((checkbox) => {
-            const itemName = checkbox.value;
-            const itemPrice = parseInt(checkbox.getAttribute('data-price'));
-            total += itemPrice;
-
-            // Add item to the order summary list
-            const listItem = document.createElement('li');
-            listItem.textContent = `${itemName} - ₹${itemPrice}`;
-            selectedList.appendChild(listItem);
-        });
-
-        // Calculate GST
-        gst = total * gstRate;
-        const grandTotal = total + gst;
-
-        // Display the subtotal, GST, and grand total
-        totalDisplay.textContent = `Subtotal: ₹${total.toFixed(2)}`;
-        gstDisplay.textContent = `GST (20%): ₹${gst.toFixed(2)}`;
-        grandTotalDisplay.textContent = `Grand Total: ₹${grandTotal.toFixed(2)}`;
-
-        // Show the order summary and hide the menu form
-        summarySection.style.display = 'block';
-        document.getElementById('menuForm').style.display = 'none';
-        document.querySelector('.submit-btn').style.display = 'none';
-    }
-
-    function goBack() {
-        document.getElementById('orderSummary').style.display = 'none';
-        document.getElementById('menuForm').style.display = 'block';
-        document.querySelector('.submit-btn').style.display = 'inline-block';
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
