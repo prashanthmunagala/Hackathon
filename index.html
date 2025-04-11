@@ -217,21 +217,58 @@
                      <label class="payment-option">
                          <input type="radio" name="payment" value="cash" checked>
                          <div class="payment-card">
-                             <img src="https://cdn-icons-png.flaticon.com/512/270/270343.png" alt="Cash">
+                             <img src="https://thumbs.dreamstime.com/b/money-cash-logo-vector-green-91037524.jpg" alt="Cash" height="50" width="50">
                              <span>Cash</span>
                          </div>
                      </label>
                      <label class="payment-option">
                          <input type="radio" name="payment" value="upi">
                          <div class="payment-card">
-                             <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="UPI">
+                             <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="UPI" width="50" height="50">
                              <span>UPI</span>
+                             <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paytm Redirect Demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .pay-btn {
+      background: #00b9f1;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <h1>Paytm Payment</h1>
+
+  <form id="paytmForm" method="post"
+    action="https://securegw-stage.paytm.in/theia/api/v1/showPaymentPage?mid=YOUR_MID_HERE&orderId=ORDERID123">
+    
+    <input type="hidden" name="mid" value="YOUR_MID_HERE">
+    <input type="hidden" name="orderId" value="ORDERID123">
+    <input type="hidden" name="txnToken" value="TXN_TOKEN_FROM_BACKEND">
+
+    <button type="submit" class="pay-btn">Pay with Paytm</button>
+  </form>
+
+  <!-- Simulate automatic redirect if needed -->
+  <!-- <script>document.getElementById('paytmForm').submit();</script> -->
+
+</body>
+</html>
+
                          </div>
                      </label>
                      <label class="payment-option">
                          <input type="radio" name="payment" value="card">
                          <div class="payment-card">
-                             <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Card">
+                             <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Card" height="50" width="50">
                              <span>Card</span>
                          </div>
                      </label>
@@ -246,3 +283,22 @@
      <script src="script.js"></script>
  </body>
  </html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paytm Redirect Demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .pay-btn {
+      background: #00b9f1;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
