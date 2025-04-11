@@ -73,7 +73,7 @@ function calculateTotal() {
 
     // Display the subtotal, GST, and grand total
     totalDisplay.textContent = `Subtotal: ₹${total.toFixed(2)}`;
-    gstDisplay.textContent = `GST (20%): ₹${gst.toFixed(2)}`;
+    gstDisplay.textContent = `GST (10%): ₹${gst.toFixed(2)}`;
     grandTotalDisplay.textContent = `Grand Total: ₹${grandTotal.toFixed(2)}`;
 
     // Show the order summary and hide the menu form
